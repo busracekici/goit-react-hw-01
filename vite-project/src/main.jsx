@@ -7,7 +7,10 @@ import Profile from './components/Profile/Profile.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App/>
+    <App>
+
     <Profile/>
+    </App>
+    
   </StrictMode>,
 )

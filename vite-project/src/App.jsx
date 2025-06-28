@@ -1,13 +1,20 @@
-// import { useState } from 'react'
+import React from "react";
+import Profile from "./components/Profile/Profile.jsx";
+import userData from "./data/userData.json";
 
-import './App.css'
-
-function App() {
-
-  
+const App = () => {
   return (
-  <div></div>
-  )
-}
+    <div>
+      <Profile
+        name={userData.username}
+        tag={userData.tag}
+        location={userData.location}
+        image={userData.avatar}
+        stats={userData.stats}
+      />
+    </div>
+  );
+};
 
-export default App
+export default App;
+
